@@ -37,8 +37,8 @@
             </StackPanel>
         </Grid>
         <Grid Grid.Row="75">
-            <Button Content="Назад" HorizontalAlignment="Left" Width="200" Click="Button_Click"></Button>
-            <Button Content="Добавить партнёра" HorizontalAlignment="Right" Width="200" Click="Button_Click"></Button>
+            <Button x:Name="GoBackButton" Content="Назад" HorizontalAlignment="Left" Width="200" Click="Button_Click"></Button>
+            <Button x:Name="AddPartnerButton" Content="Добавить партнёра" HorizontalAlignment="Right" Width="200" Click="AddPartnerButton_Click"></Button>
         </Grid>
     </Grid>
 </Page>
