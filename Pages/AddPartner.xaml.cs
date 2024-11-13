@@ -81,6 +81,14 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.Pages
                 MessageBoxButton button = MessageBoxButton.OK;
                 MessageBoxResult result = MessageBox.Show("Телефон не указан", message, button, image);
             }
+            else if (EnterEmail.Text == "" || EnterEmail.Text == " " || EnterEmail.Text == null)
+            {
+                string message = "Ошибка! Email не указан";
+
+                MessageBoxImage image = MessageBoxImage.Error;
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxResult result = MessageBox.Show("Email не указан", message, button, image);
+            }
         }
     }
 }
