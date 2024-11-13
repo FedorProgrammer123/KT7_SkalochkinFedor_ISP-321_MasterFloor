@@ -89,6 +89,14 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.Pages
                 MessageBoxButton button = MessageBoxButton.OK;
                 MessageBoxResult result = MessageBox.Show("Email не указан", message, button, image);
             }
+            else
+            {
+                string message = "Успешно добавлен партенер";
+
+                MessageBoxImage image = MessageBoxImage.Information;
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxResult result = MessageBox.Show("Успех", message, button, image);
+            }
         }
     }
 }
