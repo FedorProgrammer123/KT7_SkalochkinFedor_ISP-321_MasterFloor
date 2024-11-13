@@ -1,0 +1,44 @@
+﻿<Page x:Class="KT7_SkalochkinFedor_ISP_321_MasterFloor.Pages.AddPartner"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KT7_SkalochkinFedor_ISP_321_MasterFloor.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddPartner">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <TextBlock Text="Добавление партнера" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Наименование:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterTitle" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Тип партнера:" Grid.Row="1"></TextBlock>
+                <ComboBox x:Name="TypePartner" Grid.Row="1" Width="200" DisplayMemberPath="PartnerType.TypePartner"></ComboBox>
+                <TextBlock Text="Рейтинг:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterRating" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Адрес:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterAddress" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="ФИО директора:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterFIODirector" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Телефон:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterPhone" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Email:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterEmail" Grid.Row="1" Width="200"></TextBox>
+                
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="75">
+            <Button Content="Назад" HorizontalAlignment="Left" Width="200" Click="Button_Click"></Button>
+            <Button Content="Добавить партнёра" HorizontalAlignment="Right" Width="200" Click="Button_Click"></Button>
+        </Grid>
+    </Grid>
+</Page>

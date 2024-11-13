@@ -23,3 +23,5 @@ C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\
 C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj.CopyComplete
 C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.exe
 C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.pdb
+C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\Pages\AddPartner.g.cs
+C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\Pages\AddPartner.baml

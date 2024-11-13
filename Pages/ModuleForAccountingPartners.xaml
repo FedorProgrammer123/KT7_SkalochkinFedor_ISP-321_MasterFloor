@@ -29,11 +29,14 @@
                             </TextBlock>
                             <TextBlock Text="{Binding Directors.FIODirector,StringFormat={}Директор:{0}}" Grid.Row="1"></TextBlock>
                             <TextBlock Text="{Binding PhonePartner}" Grid.Row="1"></TextBlock>
-                            <TextBlock Text="{Binding Rating,StringFormat={}Рейтинг:{0}}" Grid.Row="1"></TextBlock>
+                            <TextBlock Text="{Binding Rating,StringFormat={}Рейтинг: {0}}" Grid.Row="1"></TextBlock>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+        </Grid>
+        <Grid Grid.Row="70">
+            <Button Content="Добавить партнера" Grid.Row="1" Width="200" HorizontalAlignment="Left" Click="Button_Click"></Button>
         </Grid>
     </Grid>
 </Page>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KT7_SkalochkinFedor_ISP_321_MasterFloor"
         mc:Ignorable="d"
-        Title="«Мастер пол»" Height="700" Width="800" MinWidth="800" MinHeight="700" WindowStartupLocation="CenterScreen" Icon="Resources/Мастер пол.ico">
+        Title="«Мастер пол»" Height="830" Width="800" MinWidth="800" MinHeight="830" MaxWidth="1000" WindowStartupLocation="CenterScreen" Icon="Resources/Мастер пол.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"></RowDefinition>
@@ -15,6 +15,6 @@
             <TextBlock Text="«Мастер пол»" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"></TextBlock>
             <Image Source="Resources/Мастер пол.png" Grid.Row="1" HorizontalAlignment="Left"></Image>
         </Grid>
-        <Frame Grid.Row="1" x:Name="MainFrame"></Frame>
+        <Frame Grid.Row="1" x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

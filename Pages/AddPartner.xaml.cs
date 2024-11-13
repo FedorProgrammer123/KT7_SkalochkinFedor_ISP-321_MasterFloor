@@ -16,19 +16,19 @@ using System.Windows.Shapes;
 namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для ModuleForAccountingPartners.xaml
+    /// Логика взаимодействия для AddPartner.xaml
     /// </summary>
-    public partial class ModuleForAccountingPartners : Page
+    public partial class AddPartner : Page
     {
-        public ModuleForAccountingPartners()
+        public AddPartner()
         {
             InitializeComponent();
-            ShowPartners.ItemsSource = Classes.Context.GetContext().partnersImport.ToList();
+            TypePartner.ItemsSource = Classes.Context.GetContext().partnersImport.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Classes.Manager.MainFrame.Navigate(new Pages.AddPartner());
+            Classes.Manager.MainFrame.Navigate(new Pages.ModuleForAccountingPartners());
         }
     }
 }
