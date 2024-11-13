@@ -24,6 +24,7 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor
         {
             InitializeComponent();
             Classes.Manager.MainFrame = MainFrame;
+            MainFrame.Navigate(new Pages.ModuleForAccountingPartners());
         }
     }
 }

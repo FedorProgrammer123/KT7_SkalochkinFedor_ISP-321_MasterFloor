@@ -23,12 +23,12 @@
           <Property Name="IDCity" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="City" Type="nvarchar" MaxLength="350" Nullable="false" />
         </EntityType>
-        <EntityType Name="Director">
+        <EntityType Name="Directors">
           <Key>
             <PropertyRef Name="IDDirector" />
           </Key>
           <Property Name="IDDirector" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Director" Type="nvarchar" MaxLength="350" Nullable="false" />
+          <Property Name="FIODirector" Type="nvarchar" MaxLength="350" Nullable="false" />
         </EntityType>
         <EntityType Name="MaterialTypeImport">
           <Key>
@@ -114,6 +114,16 @@
           </Key>
           <Property Name="IDStreet" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Street" Type="nvarchar" MaxLength="350" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="TitleProducts">
           <Key>
@@ -207,10 +217,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_PartnersImport_Director">
-          <End Role="Director" Type="Self.Director" Multiplicity="1" />
+          <End Role="Directors" Type="Self.Directors" Multiplicity="1" />
           <End Role="PartnersImport" Type="Self.PartnersImport" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Director">
+            <Principal Role="Directors">
               <PropertyRef Name="IDDirector" />
             </Principal>
             <Dependent Role="PartnersImport">
@@ -269,7 +279,7 @@
         <EntityContainer Name="Хранилище ModelContainer">
           <EntitySet Name="AddressPartner" EntityType="Self.AddressPartner" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="Director" EntityType="Self.Director" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Directors" EntityType="Self.Directors" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MaterialTypeImport" EntityType="Self.MaterialTypeImport" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PartnerProductsImport" EntityType="Self.PartnerProductsImport" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PartnersImport" EntityType="Self.PartnersImport" Schema="dbo" store:Type="Tables" />
@@ -280,6 +290,7 @@
           <EntitySet Name="ProductTypeImport" EntityType="Self.ProductTypeImport" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Region" EntityType="Self.Region" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Street" EntityType="Self.Street" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TitleProducts" EntityType="Self.TitleProducts" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_AddressPartner_City" Association="Self.FK_AddressPartner_City">
             <End Role="City" EntitySet="City" />
@@ -310,7 +321,7 @@
             <End Role="PartnersImport" EntitySet="PartnersImport" />
           </AssociationSet>
           <AssociationSet Name="FK_PartnersImport_Director" Association="Self.FK_PartnersImport_Director">
-            <End Role="Director" EntitySet="Director" />
+            <End Role="Directors" EntitySet="Directors" />
             <End Role="PartnersImport" EntitySet="PartnersImport" />
           </AssociationSet>
           <AssociationSet Name="FK_PartnersImport_PartnerTitle" Association="Self.FK_PartnersImport_PartnerTitle">
@@ -359,13 +370,13 @@
           <Property Name="City1" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="AddressPartner" Relationship="Self.FK_AddressPartner_City" FromRole="City" ToRole="AddressPartner" />
         </EntityType>
-        <EntityType Name="Director">
+        <EntityType Name="Directors">
           <Key>
             <PropertyRef Name="IDDirector" />
           </Key>
           <Property Name="IDDirector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Director1" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="PartnersImport" Relationship="Self.FK_PartnersImport_Director" FromRole="Director" ToRole="PartnersImport" />
+          <Property Name="FIODirector" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="PartnersImport" Relationship="Self.FK_PartnersImport_Director" FromRole="Directors" ToRole="PartnersImport" />
         </EntityType>
         <EntityType Name="MaterialTypeImport">
           <Key>
@@ -401,7 +412,7 @@
           <Property Name="INN" Type="Int64" Nullable="false" />
           <Property Name="Rating" Type="Int32" Nullable="false" />
           <NavigationProperty Name="AddressPartner1" Relationship="Self.FK_PartnersImport_AddressPartner" FromRole="PartnersImport" ToRole="AddressPartner" />
-          <NavigationProperty Name="Director1" Relationship="Self.FK_PartnersImport_Director" FromRole="PartnersImport" ToRole="Director" />
+          <NavigationProperty Name="Directors" Relationship="Self.FK_PartnersImport_Director" FromRole="PartnersImport" ToRole="Directors" />
           <NavigationProperty Name="PartnerTitle" Relationship="Self.FK_PartnersImport_PartnerTitle" FromRole="PartnersImport" ToRole="PartnerTitle" />
           <NavigationProperty Name="PartnerType" Relationship="Self.FK_PartnersImport_PartnerType" FromRole="PartnersImport" ToRole="PartnerType" />
         </EntityType>
@@ -466,6 +477,16 @@
           <Property Name="IDStreet" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Street1" Type="String" MaxLength="350" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="AddressPartner" Relationship="Self.FK_AddressPartner_Street" FromRole="Street" ToRole="AddressPartner" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="TitleProducts">
           <Key>
@@ -537,10 +558,10 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_PartnersImport_Director">
-          <End Role="Director" Type="Self.Director" Multiplicity="1" />
+          <End Role="Directors" Type="Self.Directors" Multiplicity="1" />
           <End Role="PartnersImport" Type="Self.PartnersImport" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Director">
+            <Principal Role="Directors">
               <PropertyRef Name="IDDirector" />
             </Principal>
             <Dependent Role="PartnersImport">
@@ -620,10 +641,10 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="AddressPartner" EntityType="Self.AddressPartner" />
           <EntitySet Name="City" EntityType="Self.City" />
-          <EntitySet Name="Director" EntityType="Self.Director" />
+          <EntitySet Name="Directors" EntityType="Self.Directors" />
           <EntitySet Name="MaterialTypeImport" EntityType="Self.MaterialTypeImport" />
           <EntitySet Name="PartnerProductsImport" EntityType="Self.PartnerProductsImport" />
           <EntitySet Name="PartnersImport" EntityType="Self.PartnersImport" />
@@ -634,6 +655,7 @@
           <EntitySet Name="ProductTypeImport" EntityType="Self.ProductTypeImport" />
           <EntitySet Name="Region" EntityType="Self.Region" />
           <EntitySet Name="Street" EntityType="Self.Street" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="TitleProducts" EntityType="Self.TitleProducts" />
           <AssociationSet Name="FK_AddressPartner_City" Association="Self.FK_AddressPartner_City">
             <End Role="City" EntitySet="City" />
@@ -656,7 +678,7 @@
             <End Role="PartnersImport" EntitySet="PartnersImport" />
           </AssociationSet>
           <AssociationSet Name="FK_PartnersImport_Director" Association="Self.FK_PartnersImport_Director">
-            <End Role="Director" EntitySet="Director" />
+            <End Role="Directors" EntitySet="Directors" />
             <End Role="PartnersImport" EntitySet="PartnersImport" />
           </AssociationSet>
           <AssociationSet Name="FK_PartnerProductsImport_PartnerTitle" Association="Self.FK_PartnerProductsImport_PartnerTitle">
@@ -689,7 +711,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities1">
           <EntitySetMapping Name="AddressPartner">
             <EntityTypeMapping TypeName="Model.AddressPartner">
               <MappingFragment StoreEntitySet="AddressPartner">
@@ -710,11 +732,11 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Director">
-            <EntityTypeMapping TypeName="Model.Director">
-              <MappingFragment StoreEntitySet="Director">
+          <EntitySetMapping Name="Directors">
+            <EntityTypeMapping TypeName="Model.Directors">
+              <MappingFragment StoreEntitySet="Directors">
                 <ScalarProperty Name="IDDirector" ColumnName="IDDirector" />
-                <ScalarProperty Name="Director1" ColumnName="Director" />
+                <ScalarProperty Name="FIODirector" ColumnName="FIODirector" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -810,6 +832,17 @@
               <MappingFragment StoreEntitySet="Street">
                 <ScalarProperty Name="IDStreet" ColumnName="IDStreet" />
                 <ScalarProperty Name="Street1" ColumnName="Street" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="Model.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

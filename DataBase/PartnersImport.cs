@@ -25,7 +25,7 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
         public int Rating { get; set; }
     
         public virtual AddressPartner AddressPartner1 { get; set; }
-        public virtual Director Director1 { get; set; }
+        public virtual Directors Directors { get; set; }
         public virtual PartnerTitle PartnerTitle { get; set; }
         public virtual PartnerType PartnerType { get; set; }
     }

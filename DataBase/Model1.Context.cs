@@ -13,10 +13,10 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class Entities1 : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public Entities1()
+            : base("name=Entities1")
         {
         }
     
@@ -27,7 +27,7 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     
         public virtual DbSet<AddressPartner> AddressPartner { get; set; }
         public virtual DbSet<City> City { get; set; }
-        public virtual DbSet<Director> Director { get; set; }
+        public virtual DbSet<Directors> Directors { get; set; }
         public virtual DbSet<MaterialTypeImport> MaterialTypeImport { get; set; }
         public virtual DbSet<PartnerProductsImport> PartnerProductsImport { get; set; }
         public virtual DbSet<PartnersImport> PartnersImport { get; set; }
@@ -38,6 +38,7 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
         public virtual DbSet<ProductTypeImport> ProductTypeImport { get; set; }
         public virtual DbSet<Region> Region { get; set; }
         public virtual DbSet<Street> Street { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TitleProducts> TitleProducts { get; set; }
     }
 }
