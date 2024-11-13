@@ -23,6 +23,7 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor
         public MainWindow()
         {
             InitializeComponent();
+            Classes.Manager.MainFrame = MainFrame;
         }
     }
 }
