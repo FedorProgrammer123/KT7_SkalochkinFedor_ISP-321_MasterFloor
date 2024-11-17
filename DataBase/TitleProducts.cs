@@ -18,15 +18,12 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
         public TitleProducts()
         {
             this.PartnerProductsImport = new HashSet<PartnerProductsImport>();
-            this.ProductsImport = new HashSet<ProductsImport>();
         }
     
-        public int IDProductions { get; set; }
-        public string Productions { get; set; }
+        public int IDProducts { get; set; }
+        public string Production { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PartnerProductsImport> PartnerProductsImport { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ProductsImport> ProductsImport { get; set; }
     }
 }

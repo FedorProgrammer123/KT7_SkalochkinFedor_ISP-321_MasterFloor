@@ -25,3 +25,30 @@ C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\
 C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.pdb
 C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\Pages\AddPartner.g.cs
 C:\Users\comcuru\Source\Repos\KT7_SkalochkinFedor_ISP-321_MasterFloor\obj\Debug\Pages\AddPartner.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.exe.config
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.exe
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.pdb
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\EntityFramework.dll
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\EntityFramework.xml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj.AssemblyReference.cache
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\MainWindow.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\Pages\AddPartner.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\Pages\ModuleForAccountingPartners.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\App.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor_Content.g.cs
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor_MarkupCompile.cache
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor_MarkupCompile.lref
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\App.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\MainWindow.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\Pages\AddPartner.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\Pages\ModuleForAccountingPartners.baml
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.g.resources
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP_321_MasterFloor.Properties.Resources.resources
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj.GenerateResource.cache
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj.CoreCompileInputs.cache
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_Skal.E74EE2F5.Up2Date
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.exe
+C:\Users\Fedor\OneDrive\Рабочий стол\MasterFloor\obj\Debug\KT7_SkalochkinFedor_ISP-321_MasterFloor.pdb

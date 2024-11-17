@@ -12,20 +12,20 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     using System;
     using System.Collections.Generic;
     
-    public partial class AddressPartner
+    public partial class Address
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public AddressPartner()
+        public Address()
         {
             this.PartnersImport = new HashSet<PartnersImport>();
         }
     
-        public int IDAddressPartner { get; set; }
+        public int IDAddress { get; set; }
         public int PostIndex { get; set; }
         public int Region { get; set; }
         public int City { get; set; }
         public int Street { get; set; }
-        public int House { get; set; }
+        public string House { get; set; }
     
         public virtual City City1 { get; set; }
         public virtual PostIndex PostIndex1 { get; set; }

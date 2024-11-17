@@ -27,7 +27,7 @@
                                 <Run Text="|"></Run>
                                 <Run Text="{Binding PartnerTitle.TitlePartner,StringFormat={}Наименование партнёра:{0}}"></Run>
                             </TextBlock>
-                            <TextBlock Text="{Binding Directors.FIODirector,StringFormat={}Директор:{0}}" Grid.Row="1"></TextBlock>
+                            <TextBlock Text="{Binding DirectorName.Director,StringFormat={}Директор:{0}}" Grid.Row="1"></TextBlock>
                             <TextBlock Text="{Binding PhonePartner}" Grid.Row="1"></TextBlock>
                             <TextBlock Text="{Binding Rating,StringFormat={}Рейтинг: {0}}" Grid.Row="1"></TextBlock>
                         </StackPanel>

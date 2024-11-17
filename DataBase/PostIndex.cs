@@ -17,13 +17,13 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PostIndex()
         {
-            this.AddressPartner = new HashSet<AddressPartner>();
+            this.Address = new HashSet<Address>();
         }
     
         public int IDPostIndex { get; set; }
-        public int PostIndex1 { get; set; }
+        public string PostIndex1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AddressPartner> AddressPartner { get; set; }
+        public virtual ICollection<Address> Address { get; set; }
     }
 }

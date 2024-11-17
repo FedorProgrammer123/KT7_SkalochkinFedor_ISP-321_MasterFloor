@@ -4,34 +4,33 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="1841cffdeeeb47c1843c1404102cc169" Name="Diagram1">
-        <EntityTypeShape EntityType="Model.AddressPartner" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.City" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Directors" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.MaterialTypeImport" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PartnerProductsImport" Width="1.5" PointX="8" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PartnersImport" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PartnerTitle" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PartnerType" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.PostIndex" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.ProductsImport" Width="1.5" PointX="8" PointY="10.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.ProductTypeImport" Width="1.5" PointX="5.75" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Region" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.Street" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="Model.TitleProducts" Width="1.5" PointX="5.75" PointY="8" IsExpanded="true" />
-        <AssociationConnector Association="Model.FK_AddressPartner_City" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_AddressPartner_PostIndex" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_AddressPartner_Region" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_AddressPartner_Street" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_PartnersImport_AddressPartner" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_PartnersImport_Director" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_PartnerProductsImport_PartnerTitle" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_PartnerProductsImport_TitleProducts" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_PartnersImport_PartnerTitle" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_PartnersImport_PartnerType" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_ProductsImport_ProductTypeImport" ManuallyRouted="false" />
-        <AssociationConnector Association="Model.FK_ProductsImport_TitleProducts" ManuallyRouted="false" />
+      <Diagram DiagramId="a81d6e3411ed4fc998145f79a984f6df" Name="Diagram1">
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.Address" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.City" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.DirectorName" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.MaterialTypeImport" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnerProductsImport" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnersImport" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnerTitle" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnerType" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.PostIndex" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.ProductsImport" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.ProductTypeImport" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.Region" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.Street" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KT7_SkalochkinFedor_ISP321_MasterPolModel.TitleProducts" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_Address_City" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_Address_PostIndex" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_Address_Region" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_Address_Street" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_PartnersImport_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_PartnersImport_DirectorName" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_PartnerProductsImport_PartnerTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_PartnerProductsImport_TitleProduction" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_PartnersImport_PartnerTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_PartnersImport_PartnerType" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_ProductsImport_PartnerTitle" ManuallyRouted="false" />
+        <AssociationConnector Association="KT7_SkalochkinFedor_ISP321_MasterPolModel.FK_ProductsImport_ProductTypeImport" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

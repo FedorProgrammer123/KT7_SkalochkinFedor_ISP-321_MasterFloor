@@ -75,13 +75,13 @@
     </Compile>
     <Compile Include="Classes\Context.cs" />
     <Compile Include="Classes\Manager.cs" />
-    <Compile Include="DataBase\AddressPartner.cs">
+    <Compile Include="DataBase\Address.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\City.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase\Directors.cs">
+    <Compile Include="DataBase\DirectorName.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\MaterialTypeImport.cs">
@@ -127,9 +127,6 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Street.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBase\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\TitleProducts.cs">

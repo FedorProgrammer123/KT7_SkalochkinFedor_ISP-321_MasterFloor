@@ -13,10 +13,10 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities1 : DbContext
+    public partial class KT7_SkalochkinFedor_ISP321_MasterPolEntities1 : DbContext
     {
-        public Entities1()
-            : base("name=Entities1")
+        public KT7_SkalochkinFedor_ISP321_MasterPolEntities1()
+            : base("name=KT7_SkalochkinFedor_ISP321_MasterPolEntities1")
         {
         }
     
@@ -25,9 +25,9 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<AddressPartner> AddressPartner { get; set; }
+        public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<City> City { get; set; }
-        public virtual DbSet<Directors> Directors { get; set; }
+        public virtual DbSet<DirectorName> DirectorName { get; set; }
         public virtual DbSet<MaterialTypeImport> MaterialTypeImport { get; set; }
         public virtual DbSet<PartnerProductsImport> PartnerProductsImport { get; set; }
         public virtual DbSet<PartnersImport> PartnersImport { get; set; }
@@ -38,7 +38,6 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
         public virtual DbSet<ProductTypeImport> ProductTypeImport { get; set; }
         public virtual DbSet<Region> Region { get; set; }
         public virtual DbSet<Street> Street { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TitleProducts> TitleProducts { get; set; }
     }
 }

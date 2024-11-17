@@ -20,12 +20,12 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
         public int Director { get; set; }
         public string EmailPartner { get; set; }
         public string PhonePartner { get; set; }
-        public int AddressPartner { get; set; }
-        public long INN { get; set; }
-        public int Rating { get; set; }
+        public int Address { get; set; }
+        public string INN { get; set; }
+        public string Rating { get; set; }
     
-        public virtual AddressPartner AddressPartner1 { get; set; }
-        public virtual Directors Directors { get; set; }
+        public virtual Address Address1 { get; set; }
+        public virtual DirectorName DirectorName { get; set; }
         public virtual PartnerTitle PartnerTitle { get; set; }
         public virtual PartnerType PartnerType { get; set; }
     }

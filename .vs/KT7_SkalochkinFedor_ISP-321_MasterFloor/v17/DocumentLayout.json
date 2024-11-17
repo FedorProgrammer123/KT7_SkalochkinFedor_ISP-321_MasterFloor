@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\pages\\addpartner.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|solutionrelative:pages\\addpartner.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\pages\\addpartner.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|solutionrelative:pages\\addpartner.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|c:\\users\\fedor\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterfloor\\classes\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AF3DB16-163C-4C45-A9E8-CC7DB21CF6B4}|KT7_SkalochkinFedor_ISP-321_MasterFloor.csproj|solutionrelative:classes\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Classes\\Context.cs",
+              "RelativeDocumentMoniker": "Classes\\Context.cs",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Classes\\Context.cs",
+              "RelativeToolTip": "Classes\\Context.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvw4AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:42:38.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T19:31:34.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddPartner.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Pages\\AddPartner.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\AddPartner.xaml.cs",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Pages\\AddPartner.xaml.cs",
+              "RelativeToolTip": "Pages\\AddPartner.xaml.cs",
+              "ViewState": "AQIAAJoAAAAAAAAAAAAAAKsAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T19:21:35.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddPartner.xaml",
+              "DocumentMoniker": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Pages\\AddPartner.xaml",
+              "RelativeDocumentMoniker": "Pages\\AddPartner.xaml",
+              "ToolTip": "C:\\Users\\Fedor\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterFloor\\Pages\\AddPartner.xaml",
+              "RelativeToolTip": "Pages\\AddPartner.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T18:46:26.036Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

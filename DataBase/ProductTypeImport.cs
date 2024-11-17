@@ -20,9 +20,9 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
             this.ProductsImport = new HashSet<ProductsImport>();
         }
     
-        public int IDTypeProducts { get; set; }
-        public string TypeProducts { get; set; }
-        public double CoeffTypeProducts { get; set; }
+        public int IDTypeProduction { get; set; }
+        public string TypeProduction { get; set; }
+        public double CoeffTypeProduction { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ProductsImport> ProductsImport { get; set; }

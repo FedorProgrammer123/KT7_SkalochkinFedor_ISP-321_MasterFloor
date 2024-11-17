@@ -14,8 +14,8 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     
     public partial class PartnerProductsImport
     {
-        public int IDProductions { get; set; }
-        public int Productions { get; set; }
+        public int IDProducts { get; set; }
+        public int Products { get; set; }
         public int TitlePartner { get; set; }
         public int QuantityProducts { get; set; }
         public System.DateTime DateSale { get; set; }

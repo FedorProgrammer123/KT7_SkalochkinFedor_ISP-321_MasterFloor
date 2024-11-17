@@ -12,12 +12,18 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     using System;
     using System.Collections.Generic;
     
-    public partial class sysdiagrams
+    public partial class DirectorName
     {
-        public string name { get; set; }
-        public int principal_id { get; set; }
-        public int diagram_id { get; set; }
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public DirectorName()
+        {
+            this.PartnersImport = new HashSet<PartnersImport>();
+        }
+    
+        public int IDDirector { get; set; }
+        public string Director { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PartnersImport> PartnersImport { get; set; }
     }
 }

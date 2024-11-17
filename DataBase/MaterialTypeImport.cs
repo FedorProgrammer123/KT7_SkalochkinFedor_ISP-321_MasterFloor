@@ -16,6 +16,6 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     {
         public int IDTypeMaterial { get; set; }
         public string TypeMaterial { get; set; }
-        public double PercentageDeffectMaterial { get; set; }
+        public double PercentageDeffect { get; set; }
     }
 }

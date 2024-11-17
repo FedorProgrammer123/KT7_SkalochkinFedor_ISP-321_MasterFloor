@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище ModelContainer" CdmEntityContainer="Entities1">
-    <EntitySetMapping Name="AddressPartner">
-      <EntityTypeMapping TypeName="Model.AddressPartner">
-        <MappingFragment StoreEntitySet="AddressPartner">
-          <ScalarProperty Name="IDAddressPartner" ColumnName="IDAddressPartner" />
+  <EntityContainerMapping StorageEntityContainer="Хранилище KT7_SkalochkinFedor_ISP321_MasterPolModelContainer" CdmEntityContainer="KT7_SkalochkinFedor_ISP321_MasterPolEntities1">
+    <EntitySetMapping Name="Address">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="IDAddress" ColumnName="IDAddress" />
           <ScalarProperty Name="PostIndex" ColumnName="PostIndex" />
           <ScalarProperty Name="Region" ColumnName="Region" />
           <ScalarProperty Name="City" ColumnName="City" />
@@ -14,35 +14,35 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="City">
-      <EntityTypeMapping TypeName="Model.City">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.City">
         <MappingFragment StoreEntitySet="City">
           <ScalarProperty Name="IDCity" ColumnName="IDCity" />
           <ScalarProperty Name="City1" ColumnName="City" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Directors">
-      <EntityTypeMapping TypeName="Model.Directors">
-        <MappingFragment StoreEntitySet="Directors">
+    <EntitySetMapping Name="DirectorName">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.DirectorName">
+        <MappingFragment StoreEntitySet="DirectorName">
           <ScalarProperty Name="IDDirector" ColumnName="IDDirector" />
-          <ScalarProperty Name="FIODirector" ColumnName="FIODirector" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="MaterialTypeImport">
-      <EntityTypeMapping TypeName="Model.MaterialTypeImport">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.MaterialTypeImport">
         <MappingFragment StoreEntitySet="MaterialTypeImport">
           <ScalarProperty Name="IDTypeMaterial" ColumnName="IDTypeMaterial" />
           <ScalarProperty Name="TypeMaterial" ColumnName="TypeMaterial" />
-          <ScalarProperty Name="PercentageDeffectMaterial" ColumnName="PercentageDeffectMaterial" />
+          <ScalarProperty Name="PercentageDeffect" ColumnName="PercentageDeffect" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PartnerProductsImport">
-      <EntityTypeMapping TypeName="Model.PartnerProductsImport">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnerProductsImport">
         <MappingFragment StoreEntitySet="PartnerProductsImport">
-          <ScalarProperty Name="IDProductions" ColumnName="IDProductions" />
-          <ScalarProperty Name="Productions" ColumnName="Productions" />
+          <ScalarProperty Name="IDProducts" ColumnName="IDProducts" />
+          <ScalarProperty Name="Products" ColumnName="Products" />
           <ScalarProperty Name="TitlePartner" ColumnName="TitlePartner" />
           <ScalarProperty Name="QuantityProducts" ColumnName="QuantityProducts" />
           <ScalarProperty Name="DateSale" ColumnName="DateSale" />
@@ -50,7 +50,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PartnersImport">
-      <EntityTypeMapping TypeName="Model.PartnersImport">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnersImport">
         <MappingFragment StoreEntitySet="PartnersImport">
           <ScalarProperty Name="IDPartners" ColumnName="IDPartners" />
           <ScalarProperty Name="TypePartner" ColumnName="TypePartner" />
@@ -58,30 +58,30 @@
           <ScalarProperty Name="Director" ColumnName="Director" />
           <ScalarProperty Name="EmailPartner" ColumnName="EmailPartner" />
           <ScalarProperty Name="PhonePartner" ColumnName="PhonePartner" />
-          <ScalarProperty Name="AddressPartner" ColumnName="AddressPartner" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
           <ScalarProperty Name="INN" ColumnName="INN" />
           <ScalarProperty Name="Rating" ColumnName="Rating" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PartnerTitle">
-      <EntityTypeMapping TypeName="Model.PartnerTitle">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnerTitle">
         <MappingFragment StoreEntitySet="PartnerTitle">
-          <ScalarProperty Name="IDTitlePartner" ColumnName="IDTitlePartner" />
+          <ScalarProperty Name="IDPartner" ColumnName="IDPartner" />
           <ScalarProperty Name="TitlePartner" ColumnName="TitlePartner" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PartnerType">
-      <EntityTypeMapping TypeName="Model.PartnerType">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.PartnerType">
         <MappingFragment StoreEntitySet="PartnerType">
-          <ScalarProperty Name="IDTypePartner" ColumnName="IDTypePartner" />
+          <ScalarProperty Name="IDType" ColumnName="IDType" />
           <ScalarProperty Name="TypePartner" ColumnName="TypePartner" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="PostIndex">
-      <EntityTypeMapping TypeName="Model.PostIndex">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.PostIndex">
         <MappingFragment StoreEntitySet="PostIndex">
           <ScalarProperty Name="IDPostIndex" ColumnName="IDPostIndex" />
           <ScalarProperty Name="PostIndex1" ColumnName="PostIndex" />
@@ -89,27 +89,27 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProductsImport">
-      <EntityTypeMapping TypeName="Model.ProductsImport">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.ProductsImport">
         <MappingFragment StoreEntitySet="ProductsImport">
           <ScalarProperty Name="IDProducts" ColumnName="IDProducts" />
           <ScalarProperty Name="ProductsType" ColumnName="ProductsType" />
-          <ScalarProperty Name="TitleProducts" ColumnName="TitleProducts" />
+          <ScalarProperty Name="ProductsTitle" ColumnName="ProductsTitle" />
           <ScalarProperty Name="Article" ColumnName="Article" />
           <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="ProductTypeImport">
-      <EntityTypeMapping TypeName="Model.ProductTypeImport">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.ProductTypeImport">
         <MappingFragment StoreEntitySet="ProductTypeImport">
-          <ScalarProperty Name="IDTypeProducts" ColumnName="IDTypeProducts" />
-          <ScalarProperty Name="TypeProducts" ColumnName="TypeProducts" />
-          <ScalarProperty Name="CoeffTypeProducts" ColumnName="CoeffTypeProducts" />
+          <ScalarProperty Name="IDTypeProduction" ColumnName="IDTypeProduction" />
+          <ScalarProperty Name="TypeProduction" ColumnName="TypeProduction" />
+          <ScalarProperty Name="CoeffTypeProduction" ColumnName="CoeffTypeProduction" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Region">
-      <EntityTypeMapping TypeName="Model.Region">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.Region">
         <MappingFragment StoreEntitySet="Region">
           <ScalarProperty Name="IDRegion" ColumnName="IDRegion" />
           <ScalarProperty Name="Region1" ColumnName="Region" />
@@ -117,29 +117,18 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Street">
-      <EntityTypeMapping TypeName="Model.Street">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.Street">
         <MappingFragment StoreEntitySet="Street">
           <ScalarProperty Name="IDStreet" ColumnName="IDStreet" />
           <ScalarProperty Name="Street1" ColumnName="Street" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="Model.sysdiagrams">
-        <MappingFragment StoreEntitySet="sysdiagrams">
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
-          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
-          <ScalarProperty Name="version" ColumnName="version" />
-          <ScalarProperty Name="definition" ColumnName="definition" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="TitleProducts">
-      <EntityTypeMapping TypeName="Model.TitleProducts">
+      <EntityTypeMapping TypeName="KT7_SkalochkinFedor_ISP321_MasterPolModel.TitleProducts">
         <MappingFragment StoreEntitySet="TitleProducts">
-          <ScalarProperty Name="IDProductions" ColumnName="IDProductions" />
-          <ScalarProperty Name="Productions" ColumnName="Productions" />
+          <ScalarProperty Name="IDProducts" ColumnName="IDProducts" />
+          <ScalarProperty Name="Production" ColumnName="Production" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

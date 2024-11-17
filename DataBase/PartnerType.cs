@@ -20,7 +20,7 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
             this.PartnersImport = new HashSet<PartnersImport>();
         }
     
-        public int IDTypePartner { get; set; }
+        public int IDType { get; set; }
         public string TypePartner { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

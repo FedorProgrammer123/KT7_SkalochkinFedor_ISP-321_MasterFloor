@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:KT7_SkalochkinFedor_ISP_321_MasterFloor.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="950" d:DesignWidth="800"
       Title="AddPartner">
 
     <Grid>
@@ -25,8 +25,16 @@
                 <ComboBox x:Name="TypePartner" Grid.Row="1" Width="200" DisplayMemberPath="PartnerType.TypePartner"></ComboBox>
                 <TextBlock Text="Рейтинг:" Grid.Row="1"></TextBlock>
                 <TextBox x:Name="EnterRating" Grid.Row="1" Width="200"></TextBox>
-                <TextBlock Text="Адрес:" Grid.Row="1"></TextBlock>
-                <TextBox x:Name="EnterAddress" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Почтовый индекс:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterPostIndex" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Регион:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterRegion" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Город:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterCity" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Улица:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterStreet" Grid.Row="1" Width="200"></TextBox>
+                <TextBlock Text="Дом:" Grid.Row="1"></TextBlock>
+                <TextBox x:Name="EnterHouse" Grid.Row="1" Width="200"></TextBox>
                 <TextBlock Text="ФИО директора:" Grid.Row="1"></TextBlock>
                 <TextBox x:Name="EnterFIODirector" Grid.Row="1" Width="200"></TextBox>
                 <TextBlock Text="Телефон:" Grid.Row="1"></TextBlock>

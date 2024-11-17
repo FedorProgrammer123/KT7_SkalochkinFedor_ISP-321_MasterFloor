@@ -16,11 +16,11 @@ namespace KT7_SkalochkinFedor_ISP_321_MasterFloor.DataBase
     {
         public int IDProducts { get; set; }
         public int ProductsType { get; set; }
-        public int TitleProducts { get; set; }
-        public long Article { get; set; }
+        public int ProductsTitle { get; set; }
+        public int Article { get; set; }
         public double MinPrice { get; set; }
     
+        public virtual PartnerTitle PartnerTitle { get; set; }
         public virtual ProductTypeImport ProductTypeImport { get; set; }
-        public virtual TitleProducts TitleProducts1 { get; set; }
     }
 }
