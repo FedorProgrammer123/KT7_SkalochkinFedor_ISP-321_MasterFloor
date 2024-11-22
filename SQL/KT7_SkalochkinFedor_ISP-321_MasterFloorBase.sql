@@ -171,7 +171,7 @@ CREATE TABLE [dbo].[PartnersImport](
 	[TitlePartner] [int] NOT NULL,
 	[Director] [int] NOT NULL,
 	[EmailPartner] [nvarchar](350) NOT NULL,
-	[PhonePartner] [nchar](350) NOT NULL,
+	[PhonePartner] [nvarchar](350) NOT NULL,
 	[Address] [int] NOT NULL,
 	[INN] [nvarchar](350) NULL,
 	[Rating] [nvarchar](250) NOT NULL,
