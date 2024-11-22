@@ -365,7 +365,7 @@ GO
 SET IDENTITY_INSERT [dbo].[PartnerTitle] ON 
 
 INSERT [dbo].[PartnerTitle] ([IDPartner], [TitlePartner]) VALUES (1, N'База Строитель')
-INSERT [dbo].[PartnerTitle] ([IDPartner], [TitlePartner]) VALUES (2, N'МонтажПро')
+INSERT [dbo].[PartnerTitle] ([IDPartner], [TitlePartner]) VALUES (2, N'Монтаж Про')
 INSERT [dbo].[PartnerTitle] ([IDPartner], [TitlePartner]) VALUES (3, N'Паркет 29')
 INSERT [dbo].[PartnerTitle] ([IDPartner], [TitlePartner]) VALUES (4, N'Ремонт и отделка')
 INSERT [dbo].[PartnerTitle] ([IDPartner], [TitlePartner]) VALUES (5, N'Стройсервис')
@@ -373,10 +373,10 @@ SET IDENTITY_INSERT [dbo].[PartnerTitle] OFF
 GO
 SET IDENTITY_INSERT [dbo].[PartnerType] ON 
 
-INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (1, N'ЗАО                                                                                                                                                                                                                                                                                                                                                           ')
-INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (2, N'ОАО                                                                                                                                                                                                                                                                                                                                                           ')
-INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (3, N'ООО                                                                                                                                                                                                                                                                                                                                                           ')
-INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (4, N'ПАО                                                                                                                                                                                                                                                                                                                                                           ')
+INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (1, N'ЗАО')
+INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (2, N'ОАО')
+INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (3, N'ООО')
+INSERT [dbo].[PartnerType] ([IDType], [TypePartner]) VALUES (4, N'ПАО')
 SET IDENTITY_INSERT [dbo].[PartnerType] OFF
 GO
 SET IDENTITY_INSERT [dbo].[PostIndex] ON 
